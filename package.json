@@ -1,0 +1,23 @@
+{
+  "name": "shamela-to-markdown",
+  "version": "1.0.0",
+  "description": "Convert Shamela-exported .htm book files to Obsidian-friendly Markdown",
+  "private": true,
+  "main": "dist/index.js",
+  "bin": {
+    "shamela-to-markdown": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "convert": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
